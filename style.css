@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*cabeçalho*/
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: #EFAC41;
+    padding-left: 80px;
+    padding-right: 30px;
+}
+
+.logo {
+    background-image: url(img/logo.png);
+    min-height: 90px;
+    min-width: 200px;
+}
+
+.nav-items-desktop,
+.nav-items-mobile {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-items-desktop li,
+.nav-items-mobile li {
+    display: inline-block;
+    color: #7f7f7f;
+}
+
+.nav-items-mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #EFAC41;
+    width: 100%;
+    height: 400px;
+}
+
+#menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100vw;
+}
+
+.btn {
+    width: 100%;
+    height: 90px;
+    background-color: #EFAC41;
+}
+
+#btn-mobile {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+li a:hover {
+    color: #000;
+}
+
+/*botão do menu*/
+
+#btn-mobile {
+    background-color: transparent;
+    border: none;
+}
+
+.bi-list,
+.bi-x-lg {
+    font-size: 40px;
+    color: #FFF;
+}
+
+/* Banner */
+.banner {
+    background-image: url("img/banner3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+/*seção bemvindo*/
+#bemvindo {
+    padding: 40px 20px;
+}
+
+#bemvindo h1 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #330A04;
+}
+
+.box-bemvindo {
+    display: flex;
+    gap: 10px;
+}
+
+.info-bemvindo p {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.img-bemvindo {
+    background-image: url("img/galeria10.jpg");
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*seção sobre nós*/
+#sobrenos {
+    padding: 40px 20px;
+}
+
+#sobrenos h2 {
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #330A04;
+}
+
+.box-sobrenos {
+    display: flex;
+    gap: 10px;
+}
+
+.info-sobrenos p {
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+
+.img-sobrenos {
+    background-image: url("img/banner2.jpg");
+    height: 300px;
+    width: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Pratos*/
+.pratos {
+    padding: 0px 20px;
+}
+
+.pratos h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #330A04;
+}
+
+.img-prato1,
+.img-prato2,
+.img-prato3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.prato-img {
+    width: 250px;
+    height: 250px;
+    background-color: #EFAC41;
+    background-size: cover;
+    background-position: center;
+    transition: 0.3s;
+}
+
+.prato-img:hover {
+    transform: scale(1.02);
+}
+
+#prato-1-img-1 {
+    background-image: url("img/galeria1.jpg");
+}
+
+#prato-1-img-2 {
+    background-image: url("img/galeria2.jpg");
+}
+
+#prato-1-img-3 {
+    background-image: url("img/galeria3.jpg");
+}
+
+#prato-1-img-4 {
+    background-image: url("img/galeria4.jpg");
+}
+
+#prato-1-img-5 {
+    background-image: url("img/galeria5.jpg");
+}
+
+#prato-2-img-1 {
+    background-image: url("img/galeria6.jpg");
+}
+
+#prato-2-img-2 {
+    background-image: url("img/galeria7.jpg");
+}
+
+#prato-2-img-3 {
+    background-image: url("img/galeria8.jpg");
+}
+
+#prato-3-img-1 {
+    background-image: url("img/galeria9.jpg");
+}
+
+#prato-3-img-2 {
+    background-image: url("img/galeria11.jpg");
+}
+
+#prato-3-img-3 {
+    background-image: url("img/galeria12.jpg");
+}
+
+#prato-3-img-4 {
+    background-image: url("img/galeria13.jpg");
+}
+
+/*formulário*/
+#contato h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #000000;
+}
+
+#contato,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+form {
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    width: 400px;
+    height: 40px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    outline: none;
+    max-width: 600px;
+    min-width: 300px;
+    max-height: 200px;
+    min-height: 40px;
+    font-style: italic;
+    font-size: 16px;
+    color: #3d3d3d;
+    padding: 10px;
+}
+
+form input[type=submit] {
+    background-color: #EFAC41;
+    color: #fff;
+    font-weight: bold;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input[type=submit]:hover {
+    background-color: #de9c32;
+}
+
+/*rodapé*/
+footer {
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: #000000;
+}
+
+.container-footer {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-loc-email-tel,
+.box-redessociais {
+    padding-top: 20px;
+    line-height: 1.5;
+}
+
+.bix {
+    font-size: 30px;
+}
+
+.redessociais a {
+    color: #000000;
+}
+
+.desenv {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*responsividade (desktop)*/
+@media screen and (min-width: 1000px) {
+    #menu-desktop {
+        display: flex;
+    }
+
+    #menu-mobile {
+        display: none;
+    }
+}
+
+/*responsividade (desktop para tablet)*/
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: flex;
+    }
+
+    .menu {
+        padding-left: 10px;
+    }
+
+    .nav-items-mobile {
+        display: none;
+    }
+}
+
+/*responsividade (desktop para mobile)*/
+@media screen and (max-width: 576px) {
+    .menu {
+        padding: 0;
+    }
+
+    #menu-desktop {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: flex;
+    }
+
+    .nav-items-mobile {
+        display: none;
+    }
+
+    .logo {
+        background-image: url(img/logo-mobile.png);
+        background-position: center;
+        background-size: cover;
+        min-height: 90px;
+        min-width: 90px;
+    }
+
+    .box-bemvindo {
+        flex-direction: column;
+    }
+
+    #bemvindo h1,
+    #sobrenos h2 {
+        text-align: center;
+    }
+
+    .info-bemvindo p,
+    .info-sobrenos p {
+        text-align: center;
+    }
+
+    .img-bemvindo,
+    .img-sobrenos {
+        width: 100%;
+    }
+
+    .box-sobrenos {
+        flex-direction: column-reverse;
+    }
+
+    .prato-1 h3,
+    .prato-2 h3,
+    .prato-3 h3 {
+        text-align: center;
+    }
+
+    .prato-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .img-prato1,
+    .img-prato2,
+    .img-prato3 {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea {
+        width: 200px;
+    }
+
+    .box-loc-email-tel,
+    .box-redessociais {
+        padding-top: 20px;
+        line-height: 1.5;
+    }
+
+    .bix {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
